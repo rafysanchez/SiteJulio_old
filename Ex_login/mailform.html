@@ -1,0 +1,98 @@
+
+<?php
+  // if something's been posted - let's serve a differnt block of content
+  if (isset($_REQUEST['message'])) {
+    
+    $to = 'you@yourdomain.com';
+    $subject = 'Contact from contact form';
+    $message = "From: " . $_REQUEST['name'] . "\n";
+    $message .= "Email: " . $_REQUEST['email'] . "\n";
+    $message .= "Message: \n" . $_REQUEST['message'];
+    
+    $header = 'From: contact_form@yourdomain.com';
+    
+    if (mail($to, $subject, $message, $header)) {
+      echo 'Your message has been sent.'; // this should be the response...off we go.
+    } else {
+      echo 'There was a problem sending your contact message';
+    }
+    
+    die(); // not the best way to do a contact form - but does fine for our demo.
+    
+    // Let's test.
+  }
+?>
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <title>jQuery AJAX forms</title>
+    <script type="text/javascript" src="http://jquery.com/src/jquery-latest.pack.js"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+      // let's start the jQuery while I wait.
+      // step 1: onload - capture the submit event on the form.
+      $(function() { // onload...do
+        $('#contactForm').submit(function() {
+          // now we're going to capture *all* the fields in the
+          // form and submit it via ajax.
+          
+          // :input is a macro that grabs all input types, select boxes
+          // textarea, etc.  Then I'm using the context of the form from 
+          // the initial '#contactForm' to narrow down our selector
+          var inputs = [];
+          $(':input', this).each(function() {
+            inputs.push(this.name + '=' + escape(this.value));
+          })
+          
+          // now if I join our inputs using '&' we'll have a query string
+          jQuery.ajax({
+            data: inputs.join('&'),
+            url: this.action,
+            timeout: 2000,
+            error: function() {
+              console.log("Failed to submit");
+            },
+            success: function(r) { 
+              alert(r);
+            }
+          }) // checkout http://jquery.com/api for more syntax and options on this method.
+          
+          // re-test...
+          // by default - we'll always return false so it doesn't redirect the user.
+          return false;
+        })
+      })
+    </script>
+    <style type="text/css" media="screen">
+      BODY { margin: 0; padding: 0; font: 1em "Trebuchet MS", verdana, arial, sans-serif; }
+      BODY { font-size: 70%; }
+      H1 { margin-bottom: 2px; font-family: Garamond, "Times New Roman", Times, Serif;}
+      DIV.container { margin: auto; width: 45%; margin-bottom: 10px; position:absolute; top:25%; left:25%;}
+      TEXTAREA { width: 80%;};
+      FIELDSET { border: 1px solid #ccc; padding: 1em; margin: 0; }
+      LEGEND { color: #ccc; font-size: 120%; }
+      INPUT, TEXTAREA { font-family: Arial, verdana; font-size: 125%; padding: 7px; border: 1px solid #999; }
+      LABEL { display: block; margin-top: 10px; }      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="content_text">
+        <h1>jQuery AJAX forms</h1>
+        <form action="" method="get" id="contactForm">
+          <fieldset>
+            <legend>Enter your message</legend>
+            <label for="email">Email:</label> <input type="text" name="email" value="" id="email" required/><br />
+            <label for="name">Name:</label> <input type="text" name="name" value="" id="name" required/><br />
+            <label for="message">Message:</label><textarea name="message" required></textarea>
+            <p><input type="submit" value="Send Message" /></p>
+          </fieldset>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

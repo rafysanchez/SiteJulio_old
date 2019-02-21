@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta name="description" content="SITE SISTEMA PARA TESTE DE CARGA E OBJETOS DE TELA COM BACKEND EM C# BASE DE DADOS MYSQL">
+    <meta name="author" content="RAFAEL SANCHEZ PORTAL">
+    
+    <title>Rafael Sanchez Portal</title>
+   
+    
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2015.2.624/styles/kendo.common-material.min.css" />
+    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2015.2.624/styles/kendo.material.min.css" />
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+
+
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2015.2.624/js/kendo.all.min.js"></script>
+    <style>
+        body {
+            padding-top: 40px;
+        }
+    </style>
+
+    <style>
+        .carousel-inner > .item > img,
+        .carousel-inner > .item > a > img {
+            width: 70%;
+            margin: auto;
+        }
+    </style>
+    <style>
+
+        #links ul li  {
+            display:inline; 
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Rafael S. Portal-MVC", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Exemplos", "Index", "Teste")</li>
+                    <li>@Html.ActionLink("Agenda", "Index", "Agenda")</li>
+                    <li>@Html.ActionLink("Clientes CRUD Ajax", "Index", "Clientes")</li>
+                    <li>@Html.ActionLink("Contato", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Sobre", "About", "Home")</li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+
+        <footer>
+            <hr>
+            <div class="container-fluid text-center">
+                <h3>Obter material de MVC grátis</h3>
+                <p>Preencha seu nome e emaill</p>
+
+                <form action="subscricao" method="post" class="form-inline">
+                    <div class="form-group">
+                        <label for="subscription">Associar</label>
+                        <input type="text" class="form-control" id="subscription" placeholder="Seu Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email </label>
+                        <input type="text" class="form-control" id="email" placeholder="Entre seu Email">
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-info">Adicione-me a lista</button>
+                    </div>
+                </form>
+
+                <hr>
+                <ul class="list-inline">
+                    <li><a href="http://www.twitter.com/rafysanchez">Twitter</a></li>
+                    <li><a href="http://www.facebook.com/rafysanchez">Facebook</a></li>
+                    <li><a href="http://www.youtube.com/rafysanchez">YouTube</a></li>
+                </ul>
+
+                <p>&copy; Copyright @@ 2016</p>
+
+            </div><!-- end Container-->
+
+
+        </footer>
+    </div>
+
+    <script>
+        $(function () {
+            $(".datepicker").datepicker({
+                dateFormat: "dd-mm-yy",
+                firstDay: 1
+            });
+        });
+    </script>
+</body>
+</html>

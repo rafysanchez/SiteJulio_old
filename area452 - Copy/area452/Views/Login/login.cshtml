@@ -1,0 +1,87 @@
+﻿@model area452.Models.Login
+
+<style type="text/css">
+    .label {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #0066FF;
+    }
+
+    .tableBorder {
+        border: solid 1px #0066FF;
+        margin-top: 5%;
+    }
+
+    .message {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: #0066FF;
+    }
+</style>
+<!-- End css code for forms -->
+<!-- Start javascript validation for forms -->
+<script type="text/javascript">
+    function validateForm() {
+        var user = document.login.username.value;
+        var user = user.trim();
+        var pass = document.login.password.value;
+        if (user.length <4)
+
+        {
+            document.getElementById('error').innerHTML = "Favor, digitar seu Nome";
+            return false;
+        }
+
+        if (pass.length <6) {
+            document.getElementById('error').innerHTML = "Digite a sua senha";
+            return false;
+        }
+        return true;
+    }
+</script>
+
+
+<div class="container" style="margin-top:5%;">
+
+   @{if (ViewBag.mensagem != null)
+   {
+    <div id="mensagem" class="alert alert-success"><p class="message-success"> @ViewBag.mensagem </p></div>
+   }
+}
+
+    @using (Html.BeginForm("Login2", "Login", FormMethod.Post, new { @id = "chkLogin" }))
+    {
+        @Html.AntiForgeryToken()
+        <fieldset>
+            <div class="form-horizontal">
+
+                <hr />
+                @Html.ValidationSummary(true)
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.User, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.User)
+                        @Html.ValidationMessageFor(model => model.User)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    @Html.LabelFor(model => model.Password, new { @class = "control-label col-md-2" })
+                    <div class="col-md-10">
+                        @Html.EditorFor(model => model.Password)
+                        @Html.ValidationMessageFor(model => model.Password)
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <input type="submit" value="Enviar" class="col-md-2" style="margin-left:150px;" />
+
+                </div>
+        </fieldset>
+
+    }
+
+
+</div>

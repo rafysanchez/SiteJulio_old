@@ -1,0 +1,48 @@
+﻿@model List<TesteFramework.Models.Countries>
+
+
+@using(Html.BeginForm())
+
+{   
+
+    
+    
+    
+    <div class="container">
+<br /><br /><br />
+
+
+   
+        <label for="product">Digite um Pais: </label>
+        <input type="text" name="product" id="product" /><br />
+        <input type="submit" value="Pesquisar" />
+
+<table class="table table-responsive">
+<thead>
+    <tr><th>ID</th><th>Cidade</th></tr>
+</thead>
+<tbody>
+
+@if (Model != null) { 
+  foreach (var item in Model)
+  {
+    <tr> <td>@item.CountryID </td> <td>@item.CountryName </td></tr>
+  }
+    
+}  
+
+
+</tbody>
+
+
+</table>
+    
+</div>
+}
+<script type="text/javascript">
+    $(function(){
+        $('#product').autocomplete({source:'@Url.Action("GetProducts")'});
+    });
+</script>
+
+

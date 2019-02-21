@@ -1,0 +1,81 @@
+﻿@model IEnumerable<area452.Models.Agenda>
+
+
+
+    @{
+        Layout = "_LayoutAgenda.cshtml";
+    }
+
+
+
+
+    <div class="container" style="width: 70%;">
+        <section>
+            <br />
+            <h2> Brilhante  e Casablanca </h2>
+            <br />
+
+            <aside>
+                <table class="table table-bordered table-hover table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Casa</th>
+                            <th>Cliente</th>
+                            <th>Entrada</th>
+                            <th>Saída</th>
+                            <th>Telefone</th>
+                            <th><></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        @foreach (var item in Model)
+                        {
+
+                            <tr>
+
+                                <td>
+                                    @Html.HiddenFor(model => item.AgendaID)
+                                    @Html.DisplayFor(modelItem => item.DataEntrada)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Casa)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Cliente)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DataEntrada)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DataSaida)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Telefone)
+                                </td>
+                                <td>
+
+
+                                    @*@Html.ActionLink("XXX", "XXXX", new { id = item.AgendaID }) |
+
+                                         @Html.ActionLink("Delete", "DeleteEmp", new { id = item.AgendaID },
+                                        new { onclick = "return confirm('Are sure wants to delete?');" })*@
+
+
+
+
+                                </td>
+                            </tr>
+
+                        }
+
+                    </tbody>
+                </table>
+            </aside>
+
+            <aside></aside>
+        </section>
+    </div>
+
+

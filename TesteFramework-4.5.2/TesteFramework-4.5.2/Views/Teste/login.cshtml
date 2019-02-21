@@ -1,0 +1,71 @@
+﻿
+
+<style type="text/css">
+    .label {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 11px;
+        color: #0066FF;
+    }
+
+    .tableBorder {
+        border: solid 1px #0066FF;
+        margin-top: 5%;
+    }
+
+    .message {
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        font-weight: bold;
+        color: #0066FF;
+    }
+</style>
+<!-- End css code for forms -->
+<!-- Start javascript validation for forms -->
+<script type="text/javascript">
+    function validateForm() {
+        var user = document.login.username.value;
+        var user = user.trim();
+        var pass = document.login.password.value;
+        if (user.length <4)
+
+        {
+            document.getElementById('error').innerHTML = "Favor, digitar seu Nome";
+            return false;
+        }
+
+        if (pass.length <6) {
+            document.getElementById('error').innerHTML = "Digite a sua senha";
+            return false;
+        }
+        return true;
+    }
+</script>
+<div class="container" style="margin-top:5%;">
+
+    <div class="well" style="text-align:center;">@ViewBag.resultado</div>
+
+    <form method="POST" action="checklogin" name="login" onsubmit="return validateForm()">
+
+        <table bgcolor="#F4F5F7" width="400px" class="tableBorder table-responsive" align="center">
+            <tr> <td colspan="2" bgcolor="#990100"> &nbsp;</td> </tr>
+            <tr> <td colspan="2" > &nbsp;</td> </tr>
+            <tr> <td align="center" colspan="2"> <img src="~/Content/locked.jpg" border="0" align="absbottom" />  &nbsp; <span class="message"> Login para Área Administrativa</span> </td> </tr>
+            <tr>
+                <!-- <td colspan="2" class="label" > &nbsp;</td >-->
+                <td colspan="2" > <div id="error" align="center" style="color:red;"> *</div> </td>
+            </tr>
+            <tr>
+
+                <td class="label" align="right" width="40%"> Nome:</td>
+                <td align="left" width="60%">
+                    <input type="text" name="username" id="username" maxlength="20" />
+                </td>
+            </tr>
+            <tr> <td class="label" align="right"> Senha:</td> <td align="left"> <input type="password" name="password" id="password" maxlength="20" />  </td> </tr>
+            <tr> <td class="label" align="right"> &nbsp;</td> <td align="left"> <input type="submit" value="Login" style="margin:4px;"/>  </td> </tr>
+            <tr> <td colspan="2" > &nbsp;</td> </tr>
+
+        </table>
+    </form>
+
+</div>

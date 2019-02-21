@@ -1,0 +1,211 @@
+<html> 
+<head> 
+<meta charset="UTF-8"> 
+<title>The Gym</title> 
+<meta name="viewport" content="width=device-width, initail-scale=1.0"> 
+<link rel="stylesheet" href="css/main.css"> 
+
+<link rel="stylesheet" href="font-awesome-4.2.0/css/font-awesome.css"> 
+
+<link rel="stylesheet" href="css/blueberry.css"> 
+
+<link rel="stylesheet" href="css/bootstrap1.css"> 
+
+
+<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> 
+
+<script src="js/jquery.blueberry.js"></script> 
+
+<script> 
+$(window).load(function() { 
+$('.blueberry').blueberry(); 
+}); 
+</script> 
+<script type="text/javascript"> 
+
+function Scroll(){ 
+var top = document.getElementById('header'); 
+var ypos = window.pageYOffset; 
+if(ypos < 700) { 
+top.style.opacity = ".9"; 
+top.style.height= "86px" 
+} 
+else{ 
+top.style.opacity = ".5"; 
+top.style.height= "100px" 
+} 
+} 
+window.addEventListener("scroll",Scroll); 
+
+</script> 
+</head> 
+
+<body> 
+<header id="header"> 
+<a href="#" id="logo"><h1><i>The Gym</i></h1></a> 
+
+<nav> 
+<a href="#" id="menu-icon"></a> 
+
+<ul> 
+<li><a href="#" class="current">Home</a></li> 
+
+<li><a href="#">Trainers</a></li> 
+
+<li><a href="#">Plans</a></li> 
+
+<li><a href="#">Pricing</a></li> 
+
+<li><a href="#">Facility</a> </li> 
+
+<li><a href="#">Contact</a></li> 
+
+</ul> 
+</nav> 
+</header> 
+
+<!--====================================================================================================================== 
+IMAGE SLIDER JS DONT WORK ON GOOGLE DRIVE SOMETIMES 
+==========================================================================================================================--> 
+<div id="doc"> 
+<div id="content"> 
+<div class="blueberry"> 
+<ul class="slides"> 
+<li><img src="images/slider1.png" alt="slide1"></li> 
+
+<li><img src="images/slider2.jpg" alt="slide2"></li> 
+
+<li><img src="images/slider3.jpg" alt="slide3"></li> 
+
+<li><img src="images/slider4.jpg" alt="slide4"></li> 
+
+</ul> 
+</div> 
+</div> 
+</div> 
+<div class="wrapper"> 
+<h1 class="headers">LIMITED TIME OFFER</h1> 
+<div class="banner"><img src="images/DesktopOffers.png" alt="banner"></div> 
+
+<br> 
+<a href="#">Buy Now</a> 
+
+<br> 
+</div> 
+
+<h1>WELCOME TO<strong><span class="c"> THE GYM.</span></strong> CHANGE YOUR FITNESS CHANGE YOUR LIFE.</h1> 
+<section class="section1"> 
+<img src="images/cardio.jpg" alt="cardio"> 
+
+<h1 class="headers"><span class="c">Cardio</span></h1> 
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
+</section> 
+<section class="section1"> 
+<img src="images/strength.jpg" alt="strength"> 
+
+<h1 class="headers"><span class="c">Strength</span></h1> 
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
+</section> 
+<section class="section1"> 
+<img src="images/training.jpg" alt="training"> 
+
+<h1 class="headers"><span class="c">Personal Training</span></h1> 
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
+</section> 
+<section class="section1"> 
+<img src="images/team.jpg" alt="team" width="380" height="428"> 
+
+<h1 class="headers"><span class="c">Team Workouts</span></h1> 
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.</p> 
+</section> 
+
+<div class="clear"></div> 
+
+<h1 class="headers">SESSION SCHEDULES</h1> 
+
+<div class="classes"> 
+<table> 
+<tr> 
+<th>Sessions</th> 
+<th style="border-left: 1px solid #ff5a34; border-right: 1px solid #ff5a34">Timing</th> 
+<th>Length</th> 
+</tr> 
+<tr> 
+<td>Yoga</td> 
+<td style="border-left: 1px solid #ff5a34; border-right: 1px solid #ff5a34">08:00 - 10:00</td> 
+<td>2 Hours</td> 
+</tr> 
+<tr> 
+<td>Dance</td> 
+<td style="border-left: 1px solid #ff5a34; border-right: 1px solid #ff5a34">11:00 - 13:00</td> 
+<td>2 Hours</td> 
+</tr> 
+<tr> 
+<td>Swimming</td> 
+<td style="border-left: 1px solid #ff5a34; border-right: 1px solid #ff5a34">14:00 - 15:00</td> 
+<td>1 hour</td> 
+</tr> 
+</table> 
+</div> 
+
+<div class="clear"></div> 
+<h1 class="line"></h1> 
+
+<span class="c fa fa-quote-left fa-3x pull-down" style="width: 10%; float: left; text-align: center"></span><p style="width: 90%; float: right">Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p> 
+<p >By <span class="c">Buckey Robert</span></p> 
+
+<div class="clear"></div> 
+<h1 class="line"></h1> 
+
+<section> 
+<img src="http://www.w3newbie.com/wp-content/uploads/ladies-gym.jpg" alt="ladies gym"> 
+
+<h1>New Hardwood Flooring</h1> 
+<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p> 
+</section> 
+<section> 
+<img src="http://www.w3newbie.com/wp-content/uploads/gym-floor.jpg" alt="gym floor"> 
+
+<h1>Lastest Equiptments</h1> 
+<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p> 
+</section> 
+<section> 
+<img src="http://www.w3newbie.com/wp-content/uploads/free-weights.jpg" alt="free weights"> 
+
+<h1>Friendly Trainers</h1> 
+<p>Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p> 
+</section> 
+<div class="clear"></div> 
+
+
+
+<footer class="bottomnav"> 
+<section> 
+<h3><strong><i>The Gym</i></strong></h3> 
+<p><b>(123) 456-7890</b> <br>123 Atlanta St,<br>Atlanta, GA 30075<br>admin@thegym.com</p> 
+</section> 
+<section> 
+<h3>Connect With Us!</h3> 
+<ul class="social" style="margin-top: 30px"> 
+<li><a href="#"><i class="fa fa-facebook-square fa-4x"></i></a></li> 
+
+<li><a href="#"><i class="fa fa-google-plus-square fa-4x"></i></a></li> 
+
+<li><a href="#"><i class="fa fa-facebook-square fa-4x"></i></a></li> 
+
+<li><a href="#"><i class="fa fa-facebook-square fa-4x"></i></a></li> 
+
+</ul> 
+</section> 
+<section> 
+<img src="http://www.w3newbie.com/wp-content/uploads/weight-lifter.png" alt="footer logo"> 
+
+</section> 
+</footer> 
+
+<footer class="copyright"> 
+<p>Copyright - <a href="http://google.com">Affan Khan</a></p> 
+
+</footer> 
+</body> 
+</html> 

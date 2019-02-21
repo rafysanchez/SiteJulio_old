@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Agenda Luiza</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    
+    <style>
+        body {
+            padding-top: 40px;
+        }
+    </style>
+
+</head>
+<body data-spy="scroll" data-target="#my-navbar">
+    <!-- Navbar -->
+    <nav class="navbar navbar-inverse   navbar-fixed-top" id="my-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a href="#" class="navbar-brand">Casas de Praia</a>
+            </div>
+            <!-- Navbar Header-->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+
+               
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Index", "Agenda")</li>
+                    <li>@Html.ActionLink("Brilhante", "Index", "Agenda")</li>
+                    <li>@Html.ActionLink("Casablanca", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Mensagens", "About", "Home")</li>
+
+                </ul>
+            </div>
+        </div>
+        <!-- End Container-->
+    </nav>
+    <!-- End navbar -->
+
+
+    <div id="body">
+        @RenderSection("featured", required: false)
+        <section class="content-wrapper main-content clear-fix">
+            @RenderBody()
+        </section>
+    </div>
+   <!-- Footer -->
+
+    <footer>
+    
+        
+          <hr>
+        <div class="container text-center">
+        
+        <ul class="list-inline">
+          <li><a href="http://www.twitter.com/rafysanchez">Twitter</a></li>
+          <li><a href="http://www.facebook.com/rafysanchez">Facebook</a></li>
+          <li><a href="http://www.youtube.com/rafysanchez">YouTube</a></li>
+        </ul>
+
+            <p>&copy; Copyright @@ 2016</p>
+            <p><i> desenvolvido por rafael sanchez portal - 55 11 999235591 </i></p>
+      </div><!-- end Container-->
+      
+
+    </footer>
+
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+</body>
+</html>

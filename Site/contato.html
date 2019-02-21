@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="eng">
+ <head> 
+ <!--[if lt IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.js"></script>
+  <![endif]-->
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Transporte Executivo">
+    <meta name="author" content="portalsoftwares ltda">
+ 
+  <title>JCP - Contato - TRANSPORTE EXECUTIVO SP</title>
+  <!-- Bootstrap CSS -->
+  <link href="./css/bootstrap.min.css" rel="stylesheet" media="screen">
+ </head>
+ <body style=" background-color:#000">
+
+<div class="container">
+
+ <div class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/" style="font-size:15px">TRANSPORTE EXECUTIVO</a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="/index.html">Home</a></li>
+                    <li><a href="servicos.html">Nossos Serviços</a></li>
+                    <li ><a href="empresa.html">JCP - Empresa</a></li> 
+                    <li class="active"><a href="#">Contato</a></li> 
+                </ul>
+                    
+
+            </div>
+        </div>
+    </div>
+
+
+</div> 
+
+
+ <!-- Contacts -->
+ <div id="contacts">
+   <div class="row">	
+     <!-- Alignment -->
+	<div class="col-sm-offset-3 col-sm-6">
+	   <!-- Form itself -->
+          <form name="sentMessage" class="well" id="contactForm" method="post" action="proc_email.asp" novalidate>
+	       <legend>Contate-me</legend>
+		 <div class="control-group">
+                    <div class="controls">
+			<input type="text" class="form-control" 
+			   	   placeholder="Nome Completo" id="name" name="name" required
+			           data-validation-required-message="digite seu nome" />
+			  <p class="help-block"></p>
+		   </div>
+	         </div> 	
+                <div class="control-group">
+                  <div class="controls">
+			<input type="email" class="form-control" placeholder="Email" 
+			   	            id="email" name="email" required
+			   		   data-validation-required-message="Digite seu email" />
+		</div>
+	    </div> 	
+			  
+               <div class="control-group">
+                 <div class="controls">
+				 <textarea rows="10" cols="100" class="form-control" 
+                       placeholder="Mensagem" id="message" name="message" required
+		       data-validation-required-message="digite sua mensagem" minlength="5" 
+                       data-validation-minlength-message="Min 5 characters" 
+                        maxlength="999" style="resize:none"></textarea>
+		</div>
+               </div> 		 
+	     <div id="success"> </div> <!-- For success/fail messages -->
+	    <button type="submit" class="btn btn-primary pull-right">Enviar</button><br />
+          </form>
+	</div>
+      </div>
+    </div>
+	
+	
+ <!-- JS FILES -->
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script> 
+ <script src="./js/bootstrap.min.js"></script>
+ <script src="./js/jqBootstrapValidation.js"></script>
+  <!--<script src="./js/contact_me.js"></script> -->
+
+  </body>
+</html>

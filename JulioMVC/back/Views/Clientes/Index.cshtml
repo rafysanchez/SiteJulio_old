@@ -1,0 +1,242 @@
+﻿@model IEnumerable<TesteFramework.Models.Cliente>
+
+    @{
+        ViewBag.Title = "Listagem de Clientes";
+    //@model IEnumerable<TesteFramework.Models.Cliente>
+    }
+    <div class="container-fluid">
+        <div id="commonMessage"></div>
+        <h2>Listagem de Clientes</h2>
+
+        <p> @Html.ActionLink("Inserir Cliente", "Create", null, new { @class = "insert-link" })</p>
+
+        <table class="table table-hover table-striped">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nome)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Endereco)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Telefone)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Email)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nome)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Endereco)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Telefone)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Email)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.ClienteId }, new { @class = "editLink" }) |
+                        @Html.ActionLink("Detalhes", "Details", new { id = item.ClienteId }, new { @class = "detail-link" }) |
+                        @Html.ActionLink("Deletar", "DeleteConfirmed", new { id = item.ClienteId }, new { @class = "delete-link" })
+                    </td>
+                </tr>
+            }
+
+        </table>
+    </div>
+
+    <div id="updateDialog" title="Atualizar Cliente"></div>
+    <div id="insert" title="adicionar cliente"></div>
+    <div id="delete-dialog" title="Confirmation">
+        <p>Excluir este cliente ?</p>
+    </div>
+    <div id="update-message"></div>
+    <div id="detail" title="Detalhes do Cliente"></div>
+
+
+
+    <script type="text/javascript">
+
+        $(function () {
+            //******************************
+            var linkObj;
+            var deleteLinkObj;
+            // delete Link
+            $('.delete-link').click(function () {
+                deleteLinkObj = $(this);  //for future use
+                $('#delete-dialog').dialog('open');
+                return false; // prevents the default behaviour
+            });
+
+            //definition of the delete dialog.
+            $('#delete-dialog').dialog({
+                autoOpen: false, width: 400, resizable: false, modal: true, //Dialog options
+                buttons: {
+                    "Excluir": function () {
+                        var x = deleteLinkObj[0].href;
+                        $.post(deleteLinkObj[0].href, function (data) {  //Post to action
+                            
+                                deleteLinkObj.closest("tr").hide('slow'); //Hide Row
+                                //(optional) Display Confirmation
+                   
+                        });
+                        $(this).dialog("close");
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            $('#insert').dialog({
+                autoOpen: false, width: 450, resizable: false, modal: true, //Dialog options
+                buttons: {
+                    "Incluir": function () {
+                       // $.post("Clientes/CreateData/", function (data) {  //Post to action
+                            
+                      //  });
+
+                        $("#update-message").html('Inserindo...'); //make sure there is nothing on the message before we continue
+                        $("#InserirCliente").submit();
+
+                        $(this).dialog("close");
+                    }
+                    ,
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            $('#detail').dialog({
+                autoOpen: false, width: 400, resizable: false, modal: true, //Dialog options
+                buttons: {
+
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+
+            //*******************************
+            $(".editLink").button();
+            $(".delete-link").button();
+            $(".insert-link").button();
+            $(".detail-link").button();
+
+
+            $('#updateDialog').dialog({
+                autoOpen: false,
+                width: 400,
+                resizable: false,
+                modal: true,
+                buttons: {
+                    "Salvar": function () {
+                        $("#update-message").html('salvando...'); //make sure there is nothing on the message before we continue
+                        $("#atualizarcliente").submit();
+                    },
+                    "Cancel": function () {
+                        $(this).dialog("close");
+                    }
+                }
+            });
+
+            $(".editLink").click(function () {
+                //change the title of the dialog
+                linkObj = $(this);
+                var dialogDiv = $('#updateDialog');
+                var viewUrl = linkObj.attr('href');
+                $.get(viewUrl, function (data) {
+                    dialogDiv.html(data);
+                    //validation
+                    var $form = $("#updateCarForm");
+                    // Unbind existing validation
+                    // $form.unbind();
+                    // $form.data("validator", null);
+                    // Check document for changes
+                    // $.validator.unobtrusive.parse(document);
+                    // Re add validation with changes
+                    // $form.validate($form.data("unobtrusiveValidation").options);
+                    //open dialog
+                    dialogDiv.dialog('open');
+                });
+                return false;
+            });
+
+
+            $(".insert-link").click(function () {
+                //change the title of the dialog
+                linkObj = $(this);
+                var dialogDiv = $('#insert');
+                var viewUrl = linkObj.attr('href');
+                $.get(viewUrl, function (data) {
+                    dialogDiv.html(data);
+                    //validation
+                    //var $form = $("#updateCarForm");
+                    //// Unbind existing validation
+                    //$form.unbind();
+                    //$form.data("validator", null);
+                    //// Check document for changes
+                    //$.validator.unobtrusive.parse(document);
+                    //// Re add validation with changes
+                    //$form.validate($form.data("unobtrusiveValidation").options);
+                    ////open dialog
+                    dialogDiv.dialog('open');
+                });
+                return false;
+            });
+        });
+
+        $(".detail-link").click(function () {
+            //change the title of the dialog
+            linkObj = $(this);
+            var dialogDiv = $('#detail');
+            // var viewUrl = "Details";
+            var viewUrl = linkObj.attr('href');
+            $.get(viewUrl, function (data) {
+                dialogDiv.html(data);
+                //validation
+                //var $form = $("#updateCarForm");
+                //// Unbind existing validation
+                //$form.unbind();
+                //$form.data("validator", null);
+                //// Check document for changes
+                //$.validator.unobtrusive.parse(document);
+                //// Re add validation with changes
+                //$form.validate($form.data("unobtrusiveValidation").options);
+                ////open dialog
+                dialogDiv.dialog('open');
+            });
+            return false;
+        });
+
+
+
+        function updateSuccess(data) {
+            if (data.Success == true) {
+                //we update the table's info
+                var parent = linkObj.closest("tr");
+                parent.find(".carName").html(data.Object.Name);
+                parent.find(".carDescription").html(data.Object.Description);
+                //now we can close the dialog
+                $('#updateDialog').dialog('close');
+                //twitter type notification
+                $('#commonMessage').html("Atualização Completa");
+                $('#commonMessage').delay(400).slideDown(400).delay(3000).slideUp(400);
+            }
+            else {
+                $("#update-message").html(data.ErrorMessage);
+                $("#update-message").show();
+            }
+        }
+
+    </script>

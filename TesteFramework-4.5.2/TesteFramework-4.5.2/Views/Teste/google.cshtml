@@ -1,0 +1,91 @@
+﻿
+
+<style>
+    #map {
+        width: 640px;
+        height: 480px;
+    }
+</style>
+
+<div class="container" style="margin-top:5%;">
+    <aside style="float:left; width:19%;">
+     <h3>Clique em um link abaixo para visualisar no mapa - ajuste o zoom!</h3>
+           <ul>
+            <li><a href="#" onclick="ajstalat_lng('casa');">Casa</a></li>
+            <li><a href="#" onclick="ajstalat_lng('Faculdade');">Faculdade</a></li>
+            <li><a href="#" onclick="ajstalat_lng('Hospital');">Hospital</a></li>
+            <li><a href="#" onclick="ajstalat_lng('Empresa');">Empresa</a></li>
+
+        </ul>
+
+    </aside>
+    <aside style="float:left; width:80%">
+        <div id="map"></div>
+    </aside>
+
+
+
+</div>
+
+
+<script>
+
+    var _lat = -23.626911;
+    var _lng = -46.763915;
+    var _zoon=10;
+
+    function ajstalat_lng(local)
+    {
+        //  -24.285024, -46.955184
+
+        switch(local) {
+            case 'casa':
+                _lat = -24.285024;
+                _lng = -46.955184;
+                _zoon = 18;
+                initMap();
+                break;
+            case 'Faculdade':
+                //-22.556510, -47.431467
+                _lat = -22.556510;
+                _lng = -47.431467;
+                _zoon = 16;
+                initMap();
+                break;
+            case 'Hospital':
+                //-22.858452, -48.434679
+
+                _lat = -22.858452;
+                _lng = -48.434679;
+                _zoon = 15;
+                initMap();
+                break;
+            case 'Empresa':
+                //-23.520249, -46.701422
+                _lat = -23.520249;
+                _lng = -46.701422;
+                _zoon = 18;
+                initMap();
+                break;
+
+            default:
+                _lat = -24.285024;
+                _lng = -46.955184;
+                _zoon = 18;
+                initMap();
+                break;
+        }
+
+        
+    }
+
+    function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: { lat: _lat, lng: _lng },
+            zoom: _zoon
+        });
+    }
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
+        async defer></script>

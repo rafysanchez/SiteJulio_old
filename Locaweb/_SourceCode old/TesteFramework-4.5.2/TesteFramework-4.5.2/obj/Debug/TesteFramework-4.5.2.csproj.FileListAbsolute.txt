@@ -1,0 +1,75 @@
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\TesteFramework.dll.config
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\TesteFramework.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\TesteFramework.pdb
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\EntityFramework.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\EntityFramework.SqlServer.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\Microsoft.Web.Infrastructure.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\MySql.Data.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\MySql.Data.Entity.EF6.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.Helpers.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.Mvc.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.Razor.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.WebPages.Deployment.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.WebPages.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.WebPages.Razor.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\EntityFramework.xml
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\EntityFramework.SqlServer.xml
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.Helpers.xml
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.Mvc.xml
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.Razor.xml
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.WebPages.xml
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.WebPages.Deployment.xml
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\bin\System.Web.WebPages.Razor.xml
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\obj\Debug\TesteFramework-4.5.2.csprojResolveAssemblyReference.cache
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\obj\Debug\TesteFramework.dll
+D:\__Repository\_TestsProjects\SupportTest\SupportTest\obj\Debug\TesteFramework.pdb
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\TesteFramework.dll.config
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\TesteFramework.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\TesteFramework.pdb
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\EntityFramework.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\EntityFramework.SqlServer.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\Microsoft.Web.Infrastructure.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\MySql.Data.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\MySql.Data.Entity.EF6.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Helpers.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Mvc.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Razor.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.Deployment.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.Razor.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\EntityFramework.xml
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\EntityFramework.SqlServer.xml
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Helpers.xml
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Mvc.xml
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Razor.xml
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.xml
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.Deployment.xml
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.Razor.xml
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\obj\Debug\TesteFramework-4.5.2.csprojResolveAssemblyReference.cache
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\obj\Debug\TesteFramework.dll
+D:\__Repository\_TestsProjects\TesteFramework-4.5.2\TesteFramework-4.5.2\obj\Debug\TesteFramework.pdb
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\TesteFramework.dll.config
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\TesteFramework.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\TesteFramework.pdb
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\EntityFramework.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\EntityFramework.SqlServer.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\MySql.Data.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\MySql.Data.Entity.EF6.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Helpers.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Mvc.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Razor.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.Deployment.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.Razor.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\EntityFramework.xml
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\EntityFramework.SqlServer.xml
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Helpers.xml
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Mvc.xml
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.Razor.xml
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.xml
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.Deployment.xml
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\bin\System.Web.WebPages.Razor.xml
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\obj\Debug\TesteFramework-4.5.2.csprojResolveAssemblyReference.cache
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\obj\Debug\TesteFramework.dll
+C:\Users\FAMILIA\Documents\SiteJulio\Locaweb\_SourceCode old\TesteFramework-4.5.2\TesteFramework-4.5.2\obj\Debug\TesteFramework.pdb

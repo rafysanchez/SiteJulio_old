@@ -1,0 +1,59 @@
+﻿@model PagedList.IPagedList<area452.Models.ClienteLoc>
+
+    @using PagedList.Mvc;
+
+    <div class="container">
+<br /><br /><br />
+
+        @using (Html.BeginForm())
+        {
+
+            <table class="table table-responsive">
+
+                <thead>
+                    <tr>
+                        <th>ClienteId</th>
+                        <th>  @Html.ActionLink("Nome", "Index", new { sortOrder = "Nome", CurrentSort = ViewBag.CurrentSort })   </th>
+                        <th>Endereco</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                        <th> @Html.ActionLink("Data Cadastro", "Index", new { sortOrder = "data_cadastro", CurrentSort = ViewBag.CurrentSort })   </th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    @foreach (var item in Model)
+                    {
+
+                        <tr>
+                            <td>@item.ClienteId</td>
+                            <td>@item.Nome</td>
+                            <td>@item.Endereco</td>
+                            <td>@item.Telefone</td>
+                            <td>@item.Email</td>
+                            <td>@item.data_cadastro</td>
+
+                        </tr>
+
+                    }
+                    <tr>
+                        <td colspan="5">
+                            <div style="text-align:center">
+                                Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+                                of @Model.PageCount
+                                @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                            </div>
+                        </td>
+                    </tr>
+
+                </tbody>
+
+
+
+            </table>
+
+
+        }
+
+
+    </div>

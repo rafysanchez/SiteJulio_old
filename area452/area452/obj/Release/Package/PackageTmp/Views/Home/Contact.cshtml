@@ -1,0 +1,69 @@
+﻿<!-- Contact -->
+
+  <div class="container">
+    <section>
+      <div class="page-header" id="contact">
+          <h2>Contate-nos. Peça Informações ou mande seu recado.</h2>
+        </div><!-- End Page Header -->
+
+        @{if (ViewBag.mensagem != null)
+        {
+            <div id="mensagem" class="alert alert-success"><p class="message-success"> @ViewBag.mensagem </p></div>
+        }
+
+        }
+
+
+        <div class="row">
+          
+         
+          <div class="col-lg-8">
+
+            <form action="contato" class="form-horizontal" method="post">
+            
+             @Html.AntiForgeryToken()   
+
+                  <div class="form-group">
+                <label for="user-name" class="col-lg-2 control-label">Nome</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="username" name="username" placeholder="Digite seu Nome">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-email" class="col-lg-2 control-label">Email</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="useremail" name="useremail" placeholder="digite seu Email ">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-url" class="col-lg-2 control-label">Seu Website</label>
+                <div class="col-lg-10">
+                    <input type="text" class="form-control" id="usersite" name="usersite" placeholder="Digite seu Site">
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <label for="user-message" class="col-lg-2 control-label">Alguma Mensagem</label>
+                <div class="col-lg-10">
+                    <textarea  id="usermessage" name="usermessage"  class="form-control"
+                              cols="20" rows="10" placeholder="Digite sua Mensagem"></textarea>
+                </div>
+              </div><!-- End form group -->
+
+              <div class="form-group">
+                <div class="col-lg-10 col-lg-offset-2">
+                  <button type="submit" class="btn btn-primary">Enviar Dados</button>
+                </div>
+              </div>
+
+             
+
+          
+          </div>
+          
+        </div><!-- End the row -->
+
+    </section>
+  </div>

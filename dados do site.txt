@@ -1,0 +1,9 @@
+
+usuario site jcpl2015
+Host: ftp.jcpvipexecutivo.com
+Usuário de FTP: jcpvipexecutivo
+Senha: f212830cde ftp e site
+
+Porta: 21
+URL alternativa: ftp.jcpvipexecutivo.hospedagemdesites.ws
+

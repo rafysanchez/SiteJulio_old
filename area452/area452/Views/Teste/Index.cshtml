@@ -1,0 +1,223 @@
+﻿@{
+    ViewBag.Title = "Modelos a seguir";
+}
+
+
+<div class="container-fluid" >
+
+    <div id="links" class="container" style="text-align:center">
+        <h2>Exemplos - Explicações</h2>
+        <ul>
+
+            <li>@Html.ActionLink("Lista com Search ", "lista", "Teste")</li>|
+
+            <li>@Html.ActionLink("Componentes Bootstraps ", "componentes", "Teste")</li>|
+
+            <li>@Html.ActionLink("Login ", "login", "Teste")</li>|
+            <li>@Html.ActionLink("Cascading ", "cascade", "Teste")</li>|
+
+            <li>@Html.ActionLink("Google API ", "google", "Teste")</li>|
+
+            <li>@Html.ActionLink("Telerik ", "telerik", "Teste")</li>|
+            <li>@Html.ActionLink("Treeview ", "treeview", "Teste")</li>|
+            <li>@Html.ActionLink("Web Services ", "webapi", "Teste")</li>|
+            <li>@Html.ActionLink("Paging ", "Index", "ClienteLoc")</li>|
+            <li>@Html.ActionLink("Carrinho Vendas ", "loja", "Teste")</li>|
+            <li>@Html.ActionLink("Google Marker Mysql ", "GoogleDataBase", "Teste")</li>|
+            <li>@Html.ActionLink("Google Marker Distance ", "GoogleDistance", "Teste")</li>|
+            <li>@Html.ActionLink("exemplo ftp ", "index", "ftp")</li>
+        </ul>
+    </div>
+    <hr />
+    <div class="container">
+        <h2>Usando Tabs Bootstrapp</h2>
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#home">Date Picker</a></li>
+            <li><a data-toggle="tab" href="#menu1">Accordion</a></li>
+            <li><a data-toggle="tab" href="#menu2">Autocomplete</a></li>
+            <li><a data-toggle="tab" href="#menu3">Outros</a></li>
+        </ul>
+
+        <div class="tab-content">
+            <div id="home" class="tab-pane fade in active">
+                <h3>Exemplo de Date Picker </h3>
+
+                <div class="form-group">
+                    <label for="user-name" class="col-lg-2 control-label">Date Picker</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control datepicker" id="dtini" name="dtini" placeholder="selecione a data inicial">
+                    </div>
+                </div><!-- End form group -->
+
+                <div class="form-group">
+                    <label for="user-name" class="col-lg-2 control-label">Date Picker</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control datepicker" id="dtfim" name="dtfim" placeholder="selecione a data final">
+                    </div>
+                </div><!-- End form group -->
+
+
+
+
+            </div>
+            <div id="menu1" class="tab-pane fade">
+                <h3>Accordion</h3>
+                <div class="container-fluid">
+                    <section>
+                        <div class="page-header" id="faq">
+                            <h2>Dúvidas: <small> Exemplo de Accordion Bootstrapp.</small></h2>
+                        </div><!-- End Page Header -->
+
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <a href="#collapse-1" data-toggle="collapse" data-parent="#accordion">
+                                            Click Aqui
+                                        </a>
+                                    </div><!-- End panel title -->
+                                    <div id="collapse-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+                                        </div>
+                                    </div><!-- End Panel collapse -->
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <a href="#collapse-2" data-toggle="collapse" data-parent="#accordion">
+                                            Click Aqui
+                                        </a>
+                                    </div><!-- End panel title -->
+                                    <div id="collapse-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+                                        </div>
+                                    </div><!-- End Panel collapse -->
+                                </div>
+                            </div>
+
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title">
+                                        <a href="#collapse-3" data-toggle="collapse" data-parent="#accordion">
+                                            Click Aqui
+                                        </a>
+                                    </div><!-- End panel title -->
+                                    <div id="collapse-3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec egestas non urna in fringilla. Praesent consequat est at feugiat faucibus
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mauris tortor, eleifend sit amet fringilla ac, tincidunt id massa. Proin et odio mattis, venenatis lacus vel, faucibus elit</p>
+                                            <p>Nam velit est, tempor vel posuere et, auctor a lectus. Aenean gravida, est accumsan dictum rhoncus, lectus mi suscipit lacus, suscipit accumsan augue tellus vitae dolor. Morbi in euismod dui</p>
+                                            <p>Nam velit est, tempor vel posuere et, auctor a lectus. Aenean gravida, est accumsan dictum rhoncus, lectus mi suscipit lacus, suscipit accumsan augue tellus vitae dolor. Morbi in euismod dui</p>
+                                            <p>Nam velit est, tempor vel posuere et, auctor a lectus. Aenean gravida, est accumsan dictum rhoncus, lectus mi suscipit lacus, suscipit accumsan augue tellus vitae dolor. Morbi in euismod dui</p>
+                                            <p>Nam velit est, tempor vel posuere et, auctor a lectus. Aenean gravida, est accumsan dictum rhoncus, lectus mi suscipit lacus, suscipit accumsan augue tellus vitae dolor. Morbi in euismod dui</p>
+                                            <p>Nam velit est, tempor vel posuere et, auctor a lectus. Aenean gravida, est accumsan dictum rhoncus, lectus mi suscipit lacus, suscipit accumsan augue tellus vitae dolor. Morbi in euismod dui</p>
+
+                                        </div>
+                                    </div><!-- End Panel collapse -->
+                                </div>
+                            </div>
+                        </div><!-- End panel group -->
+
+                    </section>
+                </div><!-- End container -->
+            </div>
+            <div id="menu2" class="tab-pane fade">
+                <h3>Autocomplete</h3>
+                <p>ao digitar vai auto-preenchendo a caixa texto - pode ser sado como alternativa ao combo.</p><br />
+                <div class="form-group">
+                    <label for="user-name" class="col-lg-2 control-label">autocomplete</label>
+                    <div class="col-lg-10">
+                        <input type="text" class="form-control " id="tags" name="txtpesquisar" placeholder="digite aqui">
+                    </div>
+                </div><!-- End form group -->
+                <br />    <p>foi utilizado ajax - json - lista de nomes comuns em database Mysql - poderia usar qualquer outro.</p>
+
+            </div>
+
+            <div id="menu3" class="tab-pane fade">
+                <h3>Outros</h3>
+                <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                        Exemplo de Dropdown Bootstrapp
+                        <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        <li><a href="#">Corinthians</a></li>
+                        <li><a href="#">São Paulo</a></li>
+                        <li><a href="#">Flamengo</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="#">Santos</a></li>
+                    </ul>
+                </div>
+                <hr /><br />
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon1">Texto Qulaquer</span>
+                    <input type="text" class="form-control" placeholder="Usuario qalquer...." aria-describedby="basic-addon1">
+                </div>
+
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="digite seu nome" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">meusite.com</span>
+                </div>
+
+                <div class="input-group">
+                    <span class="input-group-addon">R$</span>
+                    <input type="text" class="form-control" aria-label="Quantia (valor mais próximo em reais)" placeholder="Quantia (to the mais próximo em reais)">
+                    <span class="input-group-addon">.00</span>
+                </div>
+
+                <label for="basic-url">Seu  URL</label>
+                <div class="input-group">
+                    <span class="input-group-addon" id="basic-addon3">https://example.com/users/</span>
+                    <input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                </div>
+
+                <hr /><br />
+                <a href="#">Caixa de Entrada <span class="badge">101</span></a>
+
+                <button class="btn btn-primary" type="button">
+                    Mensagens: <span class="badge">4</span>
+                </button>
+                <hr /><br />
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<script>
+    $(function () {
+        var availableTags = [
+          "ActionScript",
+          "AppleScript",
+          "Asp",
+          "BASIC",
+          "C",
+          "C++",
+          "Clojure",
+          "COBOL",
+          "ColdFusion",
+          "Erlang",
+          "Fortran",
+          "Groovy",
+          "Haskell",
+          "Java",
+          "JavaScript",
+          "Lisp",
+          "Perl",
+          "PHP",
+          "Python",
+          "Ruby",
+          "Scala",
+          "Scheme"
+        ];
+        $("#tags").autocomplete({
+            source: availableTags
+        });
+    });
+</script>
